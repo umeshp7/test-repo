@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ns2:application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://wadl.dev.java.net/2009/02" xmlns:tns="http://tempuri.org">
+    <ns2:doc title="super-tech-heroes" xml:lang="en">A REST API for technology-themed superheroes</doc>
+	    <ns2:resources base="http://example.com/api">
+	        <ns2:resource id="_" path="/">
+	          <ns2:method id="UnnammedEndpoint" name="GET"></method>
+			</ns2:resource>
+    	</ns2:resources>
+</ns2:application>
