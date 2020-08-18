@@ -1,0 +1,133 @@
+{
+	"id": "aa9acf44-0205-423e-9b41-262146b28691",
+	"name": "Reproduce Authorization issue",
+	"description": null,
+	"auth": null,
+	"events": [],
+	"variables": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string",
+			"disabled": false
+		}
+	],
+	"order": [
+		"ec817a60-af46-42ef-a396-9cf1452861c7",
+		"bd5be895-8844-4f16-998c-1f68787371cf"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "bd5be895-8844-4f16-998c-1f68787371cf",
+			"name": "status",
+			"url": "{{baseUrl}}/status",
+			"description": "Returns the service version",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "e79fe274-522b-4fd9-b398-e143e340b170",
+					"name": "Service info multi-line string",
+					"status": "OK",
+					"mime": "",
+					"language": "text",
+					"text": "fugiat Lorem esse",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": ""
+					},
+					"requestObject": {
+						"id": "c2ddda6a-30d3-486c-9caa-61ac8b4a7ab8",
+						"method": "GET",
+						"headers": "",
+						"pathVariables": {},
+						"url": "{{baseUrl}}/status",
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"dataMode": null,
+						"data": null
+					},
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookies": [],
+					"request": "bd5be895-8844-4f16-998c-1f68787371cf",
+					"collection": "aa9acf44-0205-423e-9b41-262146b28691"
+				}
+			],
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "ec817a60-af46-42ef-a396-9cf1452861c7",
+			"name": "health",
+			"url": "{{baseUrl}}/health",
+			"description": "Health check - always returns OK",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "019f203e-2aa2-439d-bea6-9680468bf20e",
+					"name": "OK",
+					"status": "OK",
+					"mime": "",
+					"language": "text",
+					"text": "OK",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": ""
+					},
+					"requestObject": {
+						"id": "1af4526e-cf8b-486d-9f55-74dc7aa4c24a",
+						"method": "GET",
+						"headers": "",
+						"pathVariables": {},
+						"url": "{{baseUrl}}/health",
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"dataMode": null,
+						"data": null
+					},
+					"headers": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookies": [],
+					"request": "ec817a60-af46-42ef-a396-9cf1452861c7",
+					"collection": "aa9acf44-0205-423e-9b41-262146b28691"
+				}
+			],
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}

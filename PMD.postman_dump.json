@@ -1,0 +1,82 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "cb37bf25-a609-4114-9e6e-ec4e6afaf73c",
+			"name": "GH BI",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"b410aa13-c882-4940-8a68-c87d3d519f23"
+			],
+			"folders_order": [],
+			"protocolProfileBehavior": {},
+			"folders": [],
+			"requests": [
+				{
+					"id": "b410aa13-c882-4940-8a68-c87d3d519f23",
+					"name": "serch code",
+					"url": "https://api.github.com/search/code?q=%25RAML 1.0+extension:raml+extension:yml+extension:yaml+repo:postmanlabs/raml1-to-postman&per_page=100",
+					"description": "",
+					"data": null,
+					"dataOptions": null,
+					"dataMode": null,
+					"headerData": null,
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "q",
+							"value": "%25RAML 1.0+extension:raml+extension:yml+extension:yaml+repo:postmanlabs/raml1-to-postman",
+							"equals": true,
+							"description": null,
+							"enabled": true
+						},
+						{
+							"key": "per_page",
+							"value": "100",
+							"equals": true,
+							"description": null,
+							"enabled": true
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "4b942a16e92936fcfb0bc8e80fe307aabc322b1c"
+							}
+						]
+					},
+					"events": null,
+					"folder": null,
+					"currentHelper": "bearerAuth",
+					"helperAttributes": {
+						"id": "bearer",
+						"token": "4b942a16e92936fcfb0bc8e80fe307aabc322b1c"
+					},
+					"collectionId": "cb37bf25-a609-4114-9e6e-ec4e6afaf73c",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "0f7f8e7e-0221-4e1a-bded-35bdebc373c5",
+			"name": "Code Generators  - globals",
+			"values": [
+				{
+					"key": "access-token",
+					"value": "actoken",
+					"enabled": true
+				}
+			]
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}

@@ -1,0 +1,14 @@
+{
+	"id": "2857d871-5a90-4eb6-8459-5374dbda6a5f",
+	"values": [
+		{
+			"key": "async",
+			"value": "wdw",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2020-08-18T05:49:40.163Z",
+	"_postman_exported_using": "Postman/7.30.1"
+}
